@@ -8,15 +8,11 @@ export const InputComponent = ({
   dispatch,
 }) => {
   return (
-    <>
-      <input
-        type={`${type}`}
-        value={`${value.data[valueToChange]}`}
-        placeholder={`${placeholder}`}
-        onChange={(e) =>
-          dispatch({ type: valueToChange, value: e.target.value })
-        }
-      />
-    </>
+    <input
+      type={`${type}`}
+      value={`${value.data[valueToChange]}`}
+      placeholder={`${placeholder}`}
+      onChange={(e) => dispatch({ type: valueToChange, value: e.target.value })}
+    />
   );
 };

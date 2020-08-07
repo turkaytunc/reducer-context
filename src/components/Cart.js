@@ -25,7 +25,7 @@ export const Cart = () => {
       <InputComponent
         type="number"
         value={cart}
-        placeholder="Age"
+        placeholder="5"
         valueToChange="age"
         dispatch={cart.dispatch}
       />

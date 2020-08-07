@@ -16,7 +16,7 @@ const reducer = (state, action) => {
     case "lastName":
       return { ...state, lastName: action.value };
     case "age":
-      return { ...state, age: action.value };
+      return { ...state, age: parseInt(action.value) };
     default:
       return state;
   }
