@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import React, { useReducer } from "react";
 import "./App.css";
 import { Counter } from "./components/Counter";
 import { CartContext } from "./CartContext";
@@ -6,7 +6,7 @@ import { CartContext } from "./CartContext";
 const fakeData = {
   firstName: "",
   lastName: "",
-  age: null,
+  age: 0,
 };
 
 const reducer = (state, action) => {
