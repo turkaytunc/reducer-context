@@ -1,5 +1,4 @@
 import React, { useReducer } from "react";
-import "./App.css";
 import { Cart } from "./components/Cart";
 import { CartContext } from "./CartContext";
 
@@ -26,9 +25,7 @@ function App() {
   const [data, dispatch] = useReducer(reducer, initialState);
   return (
     <CartContext.Provider value={{ data, dispatch }}>
-      <div className="App">
-        <Cart></Cart>
-      </div>
+      <Cart></Cart>
     </CartContext.Provider>
   );
 }
