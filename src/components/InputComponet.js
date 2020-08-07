@@ -5,10 +5,10 @@ export const InputComponet = ({ type, value, placeholder, valueToChange }) => {
     <>
       <input
         type={`${type}`}
-        value={`${value}`}
+        value={`${value.data[valueToChange]}`}
         placeholder={`${placeholder}`}
         onChange={(e) =>
-          cart.setData({ ...value, [valueToChange]: e.target.value })
+          value.setData({ ...value.data, [valueToChange]: e.target.value })
         }
       />
     </>
