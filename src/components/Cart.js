@@ -1,28 +1,28 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
-import { InputComponet } from "./InputComponet";
+import { InputComponent } from "./InputComponent";
 
-export const Counter = () => {
+export const Cart = () => {
   const cart = useContext(CartContext);
   console.log(cart.data);
 
   return (
     <div>
-      <InputComponet
+      <InputComponent
         type="text"
         value={cart}
         placeholder="First Name"
         valueToChange="firstName"
         dispatch={cart.dispatch}
       />
-      <InputComponet
+      <InputComponent
         type="text"
         value={cart}
         placeholder="Last Name"
         valueToChange="lastName"
         dispatch={cart.dispatch}
       />
-      <InputComponet
+      <InputComponent
         type="number"
         value={cart}
         placeholder="Age"

@@ -1,9 +1,9 @@
 import React, { useReducer } from "react";
 import "./App.css";
-import { Counter } from "./components/Counter";
+import { Cart } from "./components/Cart";
 import { CartContext } from "./CartContext";
 
-const fakeData = {
+const initialState = {
   firstName: "",
   lastName: "",
   age: 0,
@@ -23,11 +23,11 @@ const reducer = (state, action) => {
 };
 
 function App() {
-  const [data, dispatch] = useReducer(reducer, fakeData);
+  const [data, dispatch] = useReducer(reducer, initialState);
   return (
     <CartContext.Provider value={{ data, dispatch }}>
       <div className="App">
-        <Counter></Counter>
+        <Cart></Cart>
       </div>
     </CartContext.Provider>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const InputComponet = ({
+export const InputComponent = ({
   type,
   value,
   placeholder,
