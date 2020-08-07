@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { CartContext } from "./CartContext";
 
 function App() {
   return (
@@ -8,5 +9,4 @@ function App() {
     </CartContext.Provider>
   );
 }
-
 export default App;
