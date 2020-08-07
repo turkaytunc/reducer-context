@@ -1,6 +1,12 @@
 import React from "react";
 
-export const InputComponet = ({ type, value, placeholder, valueToChange }) => {
+export const InputComponet = ({
+  type,
+  value,
+  placeholder,
+  valueToChange,
+  dispatch,
+}) => {
   return (
     <>
       <input
@@ -8,7 +14,7 @@ export const InputComponet = ({ type, value, placeholder, valueToChange }) => {
         value={`${value.data[valueToChange]}`}
         placeholder={`${placeholder}`}
         onChange={(e) =>
-          value.setData({ ...value.data, [valueToChange]: e.target.value })
+          dispatch({ type: valueToChange, value: e.target.value })
         }
       />
     </>

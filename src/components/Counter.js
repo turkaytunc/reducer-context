@@ -12,19 +12,22 @@ export const Counter = () => {
         type="text"
         value={cart}
         placeholder="First Name"
-        valueToChange={cart.dispatch}
+        valueToChange="firstName"
+        dispatch={cart.dispatch}
       />
       <InputComponet
         type="text"
         value={cart}
         placeholder="Last Name"
-        valueToChange={cart.dispatch}
+        valueToChange="lastName"
+        dispatch={cart.dispatch}
       />
       <InputComponet
         type="number"
         value={cart}
         placeholder="Age"
-        valueToChange={cart.dispatch}
+        valueToChange="age"
+        dispatch={cart.dispatch}
       />
     </div>
   );
