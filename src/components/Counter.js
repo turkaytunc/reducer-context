@@ -14,13 +14,17 @@ export const Counter = () => {
         placeholder="First Name"
         valueToChange="firstName"
       />
-      <input
+      <InputComponet
         type="text"
-        value={cart.data.firstName}
-        placeholder="FirstName"
-        onChange={(e) =>
-          cart.setData({ ...cart.data, firstName: e.target.value })
-        }
+        value={cart}
+        placeholder="Last Name"
+        valueToChange="lastName"
+      />
+      <InputComponet
+        type="number"
+        value={cart}
+        placeholder="Age"
+        valueToChange="age"
       />
     </div>
   );
